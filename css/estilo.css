@@ -1,0 +1,276 @@
+html{
+  /*height: 400px;*/
+}
+
+body {
+  background: #fdfcfb;
+  /* font-size: 0.9em; */
+  font-family: 'PT Mono';
+  color: #222;
+  margin:5%;
+  /* width:360px; */
+  /* height:320px; */
+  /* overflow: hidden */
+}
+
+#loading{
+  left: 47%;
+  top: 33px;
+  display: block;
+  position: absolute;
+  background: url('../img/load.gif') no-repeat;
+  float: left;
+  width: 18px;
+  height: 10px;
+}
+
+#edit{   
+    background: url(../img/edit.gif) no-repeat; 
+}
+
+#optrate{
+  background: url('../img/usdtoeur1.jpeg') no-repeat; 
+  cursor: pointer;  
+}
+
+#btndark{  
+  width: 25px;
+  height: 25px;
+  background: url('../img/Antu_contrast.svg') no-repeat;
+  display: none; 
+}
+
+.btnpanel{
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#panel{
+  height: 50px;  
+  padding-top: 20px;
+  width: 30px;  
+  /*display: inline;*/
+  position: relative;
+  margin-left: 0px;
+  margin-top: 5px;
+  left: 90%;
+}
+
+#contenedor{
+  /* float: left; */
+  /* margin: 20px 20px 0px 20px; */
+  width: 100%; 
+  margin-top: 40px; 
+}
+
+#no{
+  /* float: left; */
+  /* margin-top: 10px; */
+  width: 100%;  
+}
+
+#get-usd{
+  background: none;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin: 0px;
+  width: 100%;
+  /* height: 48px; */
+  /* width: 200px; */
+  font-size: 3.2em;
+  text-align: center;
+}
+
+#txttitulo{
+  letter-spacing: 5px;
+  float: left;
+  width: 100%;
+  /* margin-top: 0px; */
+  /* margin-left: 2px; */
+  text-align:center;
+  font-size: 0.7em; 
+  color: #999;
+}
+
+#edit:hover{
+    background: url(../img/edit.gif) no-repeat;
+    background-position: 0 -20px;
+}
+
+input {
+    font-family: 'PT Mono';
+    background: none;
+    border: 0;
+}
+
+#divAduana , #divCorreo , #optrate{
+  display: none;
+}
+
+
+
+/* Chrome, Safari, Edge, Opera */
+/* para quitar flechas en campos numericos*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-input-placeholder { color:#91c260; }
+::-moz-placeholder { color:#91c260; } /* firefox 19+ */
+:-ms-input-placeholder { color:#91c260; } /* ie */
+input:-moz-placeholder { color:#91c260; }
+
+#get-precio{
+  font-size: 2em;
+  width: 100%;
+  /* height: 60px; */
+  /* padding: 0 20px 0 20px; */
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  /* float: left;	 */
+  color: #fff;
+  /*background: #694 url(../img/back.gif);*/
+}
+
+.dolar{
+  /*color: #fff;*/
+  color: #439a3b;
+  background: #694 url(../img/back.gif);    
+}
+
+.euro{    
+    background: #694 url(../img/back_01.gif);  
+    color: #fff;
+    /*color: #65469b;*/
+    color: #394089;
+}
+
+
+.dark{
+  background-color: #1f202d;
+  /* color: #ffffffe0;
+  color:  #999  ; */
+  color: #333;  
+}
+
+.css-label{
+  margin-bottom: 4px;
+}
+
+#lista_total{
+  margin-top: 10px;
+  height: 30px;
+}
+
+#detalle{
+  margin-top: 80px;
+  /* font-size: 1.2em;    */
+}
+
+#exterior,#taxes{
+  /* padding-top: 2px; */
+}
+
+body * {
+  /* border: 1px solid; */
+}
+
+#divtotal{
+  padding-top: 8px;
+  margin-top: 15px;  
+}
+
+.sub{
+  font-size: 0.6em;
+  vertical-align: 3px;
+}
+
+#preciototal{
+  float: right;
+  text-align: center;
+  /* font-family: 'Dosis', sans-serif; */
+  /* margin: -6px 0 5px 0; */
+  font-size: 2.8em;  
+  /* color:darkgreen; */
+  /* padding: 2px;   */
+  /* margin: 2px; */
+  width: 100%;
+  border-bottom: 2px solid;
+  margin-bottom: 30px;
+}
+
+.item{
+  /* height: 25px; */
+  /* margin-top: 5px; */
+   /* font-size: 1.5em;    */
+  /* border: 1px solid; */
+  /* min-width: 140px; */  
+  /* padding: 3px;  */
+  /* margin-right: 10px; */
+}
+
+.item label{
+  /* border: 1px solid;    */
+  font-size: 16;
+}
+
+.divitem{  
+  width: 40%;
+  display: inline-block;
+}
+
+.data{
+  font-size: 16;
+  /* float: right; */
+  /* text-align: right; */
+  /* text-align: right;   */
+  /* max-width: 100px; */
+  /* width: 100; */
+  /* font-size: 1em; */
+  /* font-size: 18; */
+  /* margin-left: 30px; */  
+  /* border: 1px solid; */
+  /* display: none; */
+}
+
+hr{  
+  border: 0;
+  border-top: 1px dashed #999;  
+}
+
+.borde{
+  /* margin: 0 0 26 0; */
+  /* margin: 0 0 12 0; */  
+  width: 100%;
+  border-top: 1px dashed #999; 
+  margin: 0;  
+}
+
+cursor{
+	color:white;
+}
+
+
+/* #btndock{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  float: left;
+  width: 27px;
+  height: 27px;
+  border: 0px;
+  background: url('../img/attach.png') no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+#btndock:hover{
+  background-position: 0 -27px;
+} */
