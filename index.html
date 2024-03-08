@@ -1,0 +1,144 @@
+<html lang = "es">
+
+<head>
+	
+	<meta charset="UTF-8">	
+	<meta name="description" content="Calculadora de compras en el exterior">
+	<meta name="keywords" content="compras, calculadora, exterior, argentina">
+	<meta name="author" content="emilandi">
+
+	<title>	Calculadora de compras en el exterior - REAL to ARS</title>
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,600|Lora' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>	    
+	<script src="js/popup.js"></script>
+
+	<!-- <link href="css/estilo.css" rel="stylesheet" type="text/css"> -->
+	<link href="css/estilo.css" rel="stylesheet" type="text/css">
+	<link href="css/check.css" rel="stylesheet" type="text/css">	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<!-- <label id="loading"></label>  -->
+
+	<!-- <div id="btndark" class="btnpanel" title="MODO NOCTURNO"></div> -->
+
+	<div class="container" id="contenedor">		
+		<!-- <button id="btncopy" title="Copiar.."> COPIAR </button> -->
+		<input id="get-usd" min="0" name="usd" disabled value="" size="20">
+		<label id="txttitulo">AR$ = 1 REAL</label>  
+
+	<!-- <div id="panel">
+		<div id="edit" class="btnpanel" title="Editar valor"></div>			
+		<div id="optrate" class="btnpanel" title="USD/EUR"></div>
+		<div id="btndark" class="btnpanel" title="MODO NOCTURNO"></div>
+	</div> -->
+
+	<form action="" name="form1" autocomplete="off">
+			<!-- <input id="get-precio" placeholder="Importe" name="Precio:" size=20> -->
+		<input type="number" id="get-precio" maxlength="8" placeholder="Importe"  class="dolar">
+
+		<!-- <div id="contenedor"> -->
+			
+			<div id="no">  		
+				
+				<!-- TOTAL -->
+				<div id="divtotal" class="">			
+					<!-- <label id="lista_total" for="preciototal">TOTAL</label> -->
+					<output id="preciototal">
+				</div>										
+			
+				<div id="detalle">
+					
+					<div class="borde"></div>
+					
+					<!-- <div id="blue">
+						<span>*Solid: 135.45 | Blue 184.65</span>
+					</div> -->
+					
+					<!-- <div class="borde"></div>	 -->
+					
+					<!-- SUBTOTAL ARS -->
+					<div class="item"  >
+						<div class="divitem">
+							<label for="total" title="PESOS ARGENTINOS">IMPORTE AR$</label>
+						</div>
+						<div class="divitem">
+							<input type="text" class="data"  id="total" disabled value="0">							
+						</div>
+					</div>  								
+										
+
+					<!-- IMPUESTOS -->
+					<div id="taxes">
+						
+						<!-- IMPUESTO PAIS -->
+						<div class="item">
+							<div class="divitem">
+								<label for="afip"  class="title" title="IMPUESTO SOLIDARIO">IMP. PAIS<span class="sub"> 30%</span></label>
+							</div>								
+							<div class="divitem">							
+								<input type="text" class="data" id="afip" disabled value="0">  			
+							</div>							
+						</div>	
+					
+						<!-- <div class="borde"></div> -->
+
+						<!-- ADELANTO GANANCIAS -->
+						<div class="item">
+							<div class="divitem">
+								<label for="afip35" class="title" title="ADELANTO PERCEPCION DE GANANCIAS">GANANCIAS<span class="sub"> 30%</span></label>	  		
+							</div>
+							<div class="divitem">
+								<input type="text" class="data" id="afip35" disabled value="0">		
+							</div>
+						</div>				
+
+					</div>		
+				</div>
+
+
+				<!-- <div class="borde"></div>  	 -->
+			
+				<!-- <div id="exterior">
+					
+					<div class="item" id="divAduana">
+						<input type="checkbox" name="opt1" id="optaduana" class="css-checkbox" />
+						<label id="lista_aduana" for="optaduana" class="css-label" title="Solo si recibis un envio desde el exterior.">ADUANA<span class="sub">50%</span></label>
+						<input type="label" class="data" for="optaduana" id="aduana" class="css-label" disabled value="0">
+					</div>
+					
+					<div class="borde"></div>
+					
+					<div class="item" id="divCorreo">
+						<input type="checkbox" id="optcorreo" class="css-checkbox" />		
+						<label id="lista_correo" for="optcorreo" class="css-label" title="TASA CORREO">TASA CORREO</label>
+						<input type="label" class="data" for="optcorreo" id="tasa" class="css-label" disabled value="0">
+					</div>	
+				
+				<!-- </div> -->
+				
+				<div class="borde"></div>					
+				
+				
+			
+			</div>	
+		
+		<!-- </div>	 -->
+
+	</form>
+
+	</div>
+		<!-- <button id="btndock" value="Attach" title="Abrir esta aplicacion en ventana independiente"></button>	 -->
+	</div>
+
+</div>
+
+</body>
+
+</html>
